@@ -1,5 +1,4 @@
-import React from 'react';
-import { useTheme } from '@mui/material/styles';
+import React, { useEffect, useState } from 'react';
 import { Box, Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -8,12 +7,26 @@ import sep from '../assets/sep.JPG';
 import mil from '../assets/mil.JPG';
 import tech from '../assets/tech.PNG';
 import intern from '../assets/digitalmedia.JPG';
-import { flexbox } from '@mui/system';
 
 export default function AboutMe() {
 
-    const theme = useTheme();
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+    // useEffect(() => {
+    //     function handleResize() {
+
+    //         setWindowWidth({
+    //             width: window.innerWidth,
+    //             height: window.innerHeight,
+    //         });
+    //     }
+    // });
+
+    // window.addEventListener("resize", handleResize);
+
+    // handleResize();
+
+    // if (window.innerWidth > "1000") {
     return (
         <section className="gifbg">
             <video autoPlay muted loop width="100%" src={bg} type="video/webm"></video>
@@ -174,3 +187,9 @@ export default function AboutMe() {
         </section >
     );
 }
+//     else {
+//         return (<>
+//             SORRY WIP
+//         </>)
+//     }
+// }
