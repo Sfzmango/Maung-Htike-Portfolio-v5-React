@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import { Drawer, Box, Typography, IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import logo from "./assets/logo.png";
 import resume from "./assets/resume.pdf";
-import background from "./assets/background.png";
+import background from "./assets/sitebg.gif";
 
 const bg = {
   backgroundImage: `url(${background})`,
-  backgroundSize: "cover"
+  backgroundSize: "cover",
 }
 
 const navStyle = {
@@ -21,10 +23,34 @@ const footerStyle = {
 
 export default function App() {
   const [page, setPage] = useState(() => <AboutMe />);
+
+  const [menuDrawer, setMenuDrawer] = useState(false);
+
   return (
     <div style={bg}>
 
-      <header>
+      <div style={{ justifyContent: 'flex-end' }}>
+        <IconButton
+          size="large"
+          edge="end"
+          color="inherit"
+          aria-label="logo"
+          onClick={() => { setMenuDrawer(true) }}>
+          <MenuIcon />
+        </IconButton>
+        <Drawer
+          anchor='right'
+          open={menuDrawer}
+          onClose={() => { setMenuDrawer(false) }}>
+          <Box p={2} width="250px" textAlign="center" role="presentation">
+            <Typography variant="h6" component="div">
+              MENU
+            </Typography>
+          </Box>
+        </Drawer>
+      </div>
+
+      {/* <header>
         <nav className="uk-width-1-1\@s uk-background-cover" uk-navbar="uk-navbar" style={navStyle}>
           <div className="uk-navbar-left">
             <ul className="uk-margin-small-left uk-navbar-nav">
@@ -48,11 +74,13 @@ export default function App() {
             </ul>
           </div>
         </nav>
-      </header>
+      </header> */}
+
+
 
       {page}
 
-      <footer className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
+      {/* <footer className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
         <div className="contactsContents">
 
           <a href="https://github.com/Sfzmango" target="_blank" rel="noreferrer" style={footerStyle}>
@@ -72,7 +100,7 @@ export default function App() {
 
         </div>
         <p>- © Maung Htike, 2022 MIT. Made using the UIkit CSS framework -</p>
-      </footer>
+      </footer> */}
     </div>
   );
 }
