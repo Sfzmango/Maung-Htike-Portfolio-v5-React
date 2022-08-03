@@ -4,16 +4,15 @@ import { Button, Typography, Stack } from "@mui/material";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
+import logo from "../assets/logo.png";
 
 export default function Home({ setPage }) {
-
-
 
     return (
         <section className='homepage'>
 
-            <Typography className="homeLogo" variant="h4" component="div" sx={{ position: "absolute", top: "0", left: "0", padding: 1.5, marginTop: "3%", marginLeft: "3%", zIndex: 105, color: "red" }}>
-                LOGO
+            <Typography className="homeLogo" component="div" sx={{ position: "absolute", top: "0", left: "0", padding: 1.5, marginTop: "3%", marginLeft: "3%", zIndex: 105 }}>
+                <img src={logo} alt="website logo" width="200px" />
             </Typography>
 
             <video autoPlay muted loop width="100%" src={bg} type="video/webm"></video>

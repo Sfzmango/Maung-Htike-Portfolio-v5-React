@@ -5,13 +5,13 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
-import logo from "./assets/logo.png";
 import resume from "./assets/resume.pdf";
 import background from "./assets/background.png";
+import { borderRadius, rgbToHex } from "@mui/system";
 
-const footerStyle = {
-  color: "black"
-};
+// const footerStyle = {
+//   color: "black"
+// };
 
 export default function App() {
   const [page, setPage] = useState();
@@ -31,11 +31,11 @@ export default function App() {
   });
 
   return (
-    <div> {/*style={bg}*/}
+    <div>
 
       <div>
         <IconButton
-          sx={{ position: "fixed", top: "0", right: "0", padding: 1.5, marginTop: "3%", marginRight: "3%", zIndex: 200, color: "red" }}
+          sx={{ position: "fixed", top: "0", right: "0", padding: 1.5, marginTop: "3%", marginRight: "3%", zIndex: 200, color: "rgb(255, 220, 183)" }}
           color="inherit"
           aria-label="logo"
           onClick={() => { setMenuDrawer(true) }}>
@@ -68,34 +68,6 @@ export default function App() {
           </Box>
         </Drawer>
       </div>
-
-      {/* <header>
-        <nav className="uk-width-1-1\@s uk-background-cover" uk-navbar="uk-navbar" style={navStyle}>
-          <div className="uk-navbar-left">
-            <ul className="uk-margin-small-left uk-navbar-nav">
-              <li><img src={logo} alt="website logo" width="100px" /></li>
-            </ul>
-          </div>
-
-          <div className="uk-navbar-right">
-            <ul className="uk-navbar-nav uk-margin-medium-right">
-              <a href="#">
-                <span uk-icon="icon: menu; ratio: 1.5" className="uk-text-muted"></span>
-              </a>
-              <div className="uk-navbar-dropdown">
-                <ul className="uk-nav uk-navbar-dropdown-nav">
-                  <li><a onClick={() => setPage(AboutMe)}>About Me</a></li>
-                  <li><a onClick={() => setPage(Projects)}>Projects</a></li>
-                  <li><a onClick={() => setPage(Contacts)}>Contact</a></li>
-                  <li><a href={resume} target="_blank" rel="noreferrer">Resume</a></li>
-                </ul>
-              </div>
-            </ul>
-          </div>
-        </nav>
-      </header> */}
-
-
 
       {page}
 

@@ -43,6 +43,12 @@ code {
 }
 
 
+@media (max-height: 725px) {
+  .homeLogo {
+    display: none;
+  }
+}
+
 @media (max-width: 490px) {
   .homepage video {
     position: absolute;
@@ -78,7 +84,7 @@ code {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 17, 0, 0.51);
+    background-color: rgb(255, 208, 158);
     mix-blend-mode: overlay;
   }
 }
