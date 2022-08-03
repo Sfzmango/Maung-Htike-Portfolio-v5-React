@@ -11,3 +11,118 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage {
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  color: #FFFFFF;
+  z-index: 102;
+}
+
+@media (min-width: 490px) {
+  .homepage video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 490px) {
+  .homepage video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  .homeLogo {
+    display: none;
+  }
+}
+
+@media (min-width: 490px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 17, 0, 0.51);
+    mix-blend-mode: overlay;
+  }
+}
+
+@media (max-width: 490px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 17, 0, 0.51);
+    mix-blend-mode: overlay;
+  }
+}
+
+.text {
+  position: relative;
+  z-index: 102;
+  margin: 5%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.702);
+  max-width: 90vw;
+  border: rgb(0, 0, 0) 1px solid;
+}
+
+.text h2 {
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 20px 0;
+  max-width: 700px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+
+  .text h2 {
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 2em;
+    max-width: 50vw;
+    text-transform: uppercase;
+  }
+
+  .text p {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 20px 0;
+    max-width: 80vw;
+    text-transform: uppercase;
+  }
+}

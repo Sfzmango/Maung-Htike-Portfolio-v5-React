@@ -1,6 +1,7 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import { Drawer, Box, Typography, IconButton, List, ListItemButton, ListItemIcon, ListItemText, Collapse, } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
@@ -8,49 +9,43 @@ import logo from "./assets/logo.png";
 import resume from "./assets/resume.pdf";
 import background from "./assets/background.png";
 
-const bg = {
-  backgroundImage: `url(${background})`,
-  backgroundSize: "cover",
-}
-
-const navStyle = {
-  background: "#222222",
-};
-
 const footerStyle = {
   color: "black"
 };
 
 export default function App() {
-  const [page, setPage] = React.useState(() => <AboutMe />);
+  const [page, setPage] = useState();
 
-  const [menuDrawer, setMenuDrawer] = React.useState(false);
+  const [menuDrawer, setMenuDrawer] = useState(false);
 
-  const [contactCollapse, setContactCollapse] = React.useState(true);
+  const [contactCollapse, setContactCollapse] = useState(true);
 
   const handleClick = () => {
     setContactCollapse(!contactCollapse);
   };
 
+  useEffect(() => {
+    if (!page) {
+      setPage(() => <Home setPage={setPage} />);
+    }
+  });
 
   return (
     <div> {/*style={bg}*/}
 
       <div>
         <IconButton
-          size="large"
-          sx={{ position: "absolute", top: "0", right: "0", padding: 1.5, margin: 2 }}
-
+          sx={{ position: "fixed", top: "0", right: "0", padding: 1.5, marginTop: "3%", marginRight: "3%", zIndex: 200, color: "red" }}
           color="inherit"
           aria-label="logo"
           onClick={() => { setMenuDrawer(true) }}>
-          <MenuIcon />
+          <MenuIcon sx={{ fontSize: "3rem" }} />
         </IconButton>
         <Drawer
           anchor='right'
           open={menuDrawer}
           onClose={() => { setMenuDrawer(false) }}>
-          <Box p={2} width="250px" textAlign="center" role="presentation" sx={{ height: "100%", color: "rgba(95,55,122,1)" }}>
+          <Box p={2} width="250px" textAlign="center" role="presentation" sx={{ height: "100%", color: "rgba(145,55,122,1)" }}>
             <Typography variant="h6" component="div">
               MENU
             </Typography>
@@ -58,13 +53,16 @@ export default function App() {
               sx={{ width: '100%', maxWidth: 360 }}
               component="nav">
               <ListItemButton>
-                <ListItemText variant="h2" primary="About Me" align="center" onClick={() => setPage(AboutMe)} />
+                <ListItemText primary="Home" align="center" onClick={() => setPage(() => <Home setPage={setPage} />)} />
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="Projects" align="center" onClick={() => setPage(Projects)} />
+                <ListItemText primary="About Me" align="center" onClick={() => setPage(() => <AboutMe />)} />
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="Resume" align="center" onClick={() => setPage(Contacts)} />
+                <ListItemText primary="Projects" align="center" onClick={() => setPage(() => <Projects />)} />
+              </ListItemButton>
+              <ListItemButton>
+                <ListItemText primary="Contact" align="center" onClick={() => setPage(() => <Contacts />)} />
               </ListItemButton>
             </List>
           </Box>

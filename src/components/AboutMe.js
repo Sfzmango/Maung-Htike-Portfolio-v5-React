@@ -8,11 +8,6 @@ import intern from '../assets/digitalmedia.JPG';
 
 export default function AboutMe() {
 
-    const style1 = {
-        fontFamily: "serif",
-        color: "#585858",
-        textShadow: "1px 1px #000000"
-    }
 
     return (
         <div className="aboutMeContents">
@@ -41,8 +36,7 @@ export default function AboutMe() {
                 </header>
             </article>
 
-            <h1 className="uk-text-center uk-margin-medium-top uk-margin-large-bottom"
-                style={style1}>
+            <h1 className="uk-text-center uk-margin-medium-top uk-margin-large-bottom">
                 Here are some of the thing's I have
                 worked on in the past:</h1>
 
