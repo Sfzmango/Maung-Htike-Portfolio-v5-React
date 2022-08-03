@@ -33,7 +33,7 @@ export default function App() {
 
       <div>
         <IconButton
-          sx={{ position: "fixed", top: "0", right: "0", padding: 1.5, marginTop: "3%", marginRight: "3%", zIndex: 200, color: "rgb(255, 220, 183)" }}
+          sx={{ position: "fixed", top: "0", right: "0", padding: 1.5, marginTop: "3%", marginRight: "3%", zIndex: 200, color: "white" }}
           color="inherit"
           aria-label="logo"
           onClick={() => { setMenuDrawer(true) }}>
@@ -43,15 +43,12 @@ export default function App() {
           anchor='right'
           open={menuDrawer}
           onClose={() => { setMenuDrawer(false) }}>
-          <Box p={2} width="250px" textAlign="center" role="presentation" sx={{ height: "100%", color: "rgba(145,55,122,1)" }}>
-            <Typography variant="h6" component="div">
-              MENU
-            </Typography>
+          <Box p={2} width="250px" textAlign="center" role="presentation" sx={{ backgroundColor: "rgba(20,20,20,1)", height: "100%", color: "rgba(145,55,122,1)" }}>
             <List
-              sx={{ width: '100%', maxWidth: 360 }}
+              sx={{ width: '100%', maxWidth: 360, color: "white" }}
               component="nav">
               <ListItemButton>
-                <ListItemText primary="Home" align="center" onClick={() => setPage(() => <Home setPage={setPage} />)} />
+                <ListItemText sx={{ fontSize: "3rem" }} primary="Home" align="center" onClick={() => setPage(() => <Home setPage={setPage} />)} />
               </ListItemButton>
               <ListItemButton>
                 <ListItemText primary="About Me" align="center" onClick={() => setPage(() => <AboutMe />)} />
@@ -60,7 +57,7 @@ export default function App() {
                 <ListItemText primary="Projects" align="center" onClick={() => setPage(() => <Projects />)} />
               </ListItemButton>
               <ListItemButton>
-                <a style={{ textDecoration: "none", width: "100%", textAlign: "center" }} href={resume} target="_blank" rel="noreferrer"><ListItemText primary="Resume" /></a>
+                <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href={resume} target="_blank" rel="noreferrer"><ListItemText primary="Resume" /></a>
               </ListItemButton>
               <ListItemButton>
                 <ListItemText primary="Contact" align="center" onClick={() => setPage(() => <Contacts />)} />
