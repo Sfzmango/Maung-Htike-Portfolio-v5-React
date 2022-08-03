@@ -6,8 +6,6 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import resume from "./assets/resume.pdf";
-import background from "./assets/background.png";
-import { borderRadius, rgbToHex } from "@mui/system";
 
 // const footerStyle = {
 //   color: "black"
@@ -60,6 +58,9 @@ export default function App() {
               </ListItemButton>
               <ListItemButton>
                 <ListItemText primary="Projects" align="center" onClick={() => setPage(() => <Projects />)} />
+              </ListItemButton>
+              <ListItemButton>
+                <a style={{ textDecoration: "none", width: "100%", textAlign: "center" }} href={resume} target="_blank" rel="noreferrer"><ListItemText primary="Resume" /></a>
               </ListItemButton>
               <ListItemButton>
                 <ListItemText primary="Contact" align="center" onClick={() => setPage(() => <Contacts />)} />

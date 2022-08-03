@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
 import logo from "../assets/logo.png";
+import resume from "../assets/resume.pdf";
 
 export default function Home({ setPage }) {
 
@@ -21,12 +22,12 @@ export default function Home({ setPage }) {
 
             <div className='text'>
                 <h2>Maung Htike</h2>
-                <p>Full stack web developer (MERN) educated at UC Berkeley Ext. Eager to bring my experience from the military and civilian side to make web applications that matter</p>
+                <p>Full stack web developer (MERN) educated at UC Berkeley Ext. Eager to bring my experience from the military and civilian side to make apps that matter</p>
                 <Stack spacing={2} direction="row">
-                    <Button variant="outlined" onClick={() => setPage(() => <AboutMe />)}>About Me</Button>
-                    <Button variant="outlined" onClick={() => setPage(() => <Projects />)}>Projects</Button>
-                    <Button variant="outlined" onClick={() => setPage(() => <Contacts />)}>Contact</Button>
-                    <Button variant="outlined" >Resume</Button>
+                    <Button variant="contained" color="warning" onClick={() => setPage(() => <AboutMe />)}>About Me</Button>
+                    <Button variant="contained" color="warning" onClick={() => setPage(() => <Projects />)}>Projects</Button>
+                    <Button variant="contained" color="warning" onClick={() => setPage(() => <Contacts />)}>Contact</Button>
+                    <a style={{ textDecoration: "none" }} href={resume} target="_blank" rel="noreferrer"><Button color="warning" variant="contained" >Resume</Button></a>
                 </Stack>
             </div>
         </section>
