@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import bg from '../assets/homebg.webm';
-import { Button, Typography, Divider, Stack } from "@mui/material";
+import { Button, Typography, Stack } from "@mui/material";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
