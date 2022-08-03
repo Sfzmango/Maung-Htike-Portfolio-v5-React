@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Drawer, Box, Typography, IconButton } from "@mui/material";
+import * as React from "react";
+import { Drawer, Box, Typography, IconButton, List, ListItemButton, ListItemIcon, ListItemText, Collapse, } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import logo from "./assets/logo.png";
 import resume from "./assets/resume.pdf";
-import background from "./assets/sitebg.gif";
+import background from "./assets/background.png";
 
 const bg = {
   backgroundImage: `url(${background})`,
@@ -22,17 +22,25 @@ const footerStyle = {
 };
 
 export default function App() {
-  const [page, setPage] = useState(() => <AboutMe />);
+  const [page, setPage] = React.useState(() => <AboutMe />);
 
-  const [menuDrawer, setMenuDrawer] = useState(false);
+  const [menuDrawer, setMenuDrawer] = React.useState(false);
+
+  const [contactCollapse, setContactCollapse] = React.useState(true);
+
+  const handleClick = () => {
+    setContactCollapse(!contactCollapse);
+  };
+
 
   return (
-    <div style={bg}>
+    <div> {/*style={bg}*/}
 
-      <div style={{ justifyContent: 'flex-end' }}>
+      <div>
         <IconButton
           size="large"
-          edge="end"
+          sx={{ position: "absolute", top: "0", right: "0", padding: 1.5, margin: 2 }}
+
           color="inherit"
           aria-label="logo"
           onClick={() => { setMenuDrawer(true) }}>
@@ -42,10 +50,23 @@ export default function App() {
           anchor='right'
           open={menuDrawer}
           onClose={() => { setMenuDrawer(false) }}>
-          <Box p={2} width="250px" textAlign="center" role="presentation">
+          <Box p={2} width="250px" textAlign="center" role="presentation" sx={{ height: "100%", color: "rgba(95,55,122,1)" }}>
             <Typography variant="h6" component="div">
               MENU
             </Typography>
+            <List
+              sx={{ width: '100%', maxWidth: 360 }}
+              component="nav">
+              <ListItemButton>
+                <ListItemText variant="h2" primary="About Me" align="center" onClick={() => setPage(AboutMe)} />
+              </ListItemButton>
+              <ListItemButton>
+                <ListItemText primary="Projects" align="center" onClick={() => setPage(Projects)} />
+              </ListItemButton>
+              <ListItemButton>
+                <ListItemText primary="Resume" align="center" onClick={() => setPage(Contacts)} />
+              </ListItemButton>
+            </List>
           </Box>
         </Drawer>
       </div>
