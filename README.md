@@ -12,7 +12,7 @@
 - [Installation](#-installation-)
 - [Usage](#-usage-)
 - [Technologies and Programs Used](#-technologies-and-programs-used-)
-- [Demonstration](#-demonstration-)
+<!-- - [Demonstration](#-demonstration-) -->
 - [Links](#-links-)
 - [Credits](#-credits-)
 - [License](#-license-)
@@ -47,8 +47,6 @@ On the app, you can navigate through the different pages using the menu on the t
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-- ![UIkit](https://img.shields.io/badge/UIkit-blue?style=for-the-badge&logo=UIkit&logoColor=white)
-
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 - ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -62,20 +60,19 @@ On the app, you can navigate through the different pages using the menu on the t
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 <br>
 
-## <ins> Demonstration: </ins>
+<!-- ## <ins> Demonstration: </ins>
         
 ![Demonstration](./src/assets/demo.gif)
-<br><br>   
+<br><br>    -->
 
 ## <ins> Links: </ins>
         
-- [Github Repository](https://sfzmango.github.io/Maung-Htike-Portfolio-V4-React/)
+- [Github Repository](https://github.com/Sfzmango/Maung-Htike-Portfolio-v5-React)
 <br>     
 
 ## <ins> Credits: </ins>
 
 Credits: 
-
 - Maung Htike
 
 <br>
