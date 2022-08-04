@@ -12,7 +12,7 @@ export default function AboutMe() {
 
     return (
         <div className="gifbg">
-            <video autoPlay muted loop width="100%" src={bg} type="video/webm"></video>
+            <video autoPlay playsinline muted loop width="100%" src={bg} type="video/webm"></video>
 
             <div className="overlay2"></div>
 
