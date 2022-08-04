@@ -23,7 +23,7 @@ export default function AboutMe() {
                 </div>
                 <Grid container spacing={2}>
                     <Grid item sm={12} md={4}>
-                        <Card sx={{ maxWidth: "100%", maxHeight: "1200px" }}>
+                        <Card >
                             <CardMedia
                                 component="img"
                                 alt="memory lane"
@@ -54,7 +54,7 @@ export default function AboutMe() {
                     </Grid>
 
                     <Grid item sm={12} md={4}>
-                        <Card sx={{ maxWidth: "100%", maxHeight: "1200px" }}>
+                        <Card >
                             <CardMedia
                                 component="img"
                                 alt="vacation awaits"
@@ -85,7 +85,7 @@ export default function AboutMe() {
                     </Grid>
 
                     <Grid item sm={12} md={4}>
-                        <Card sx={{ maxWidth: "100%", maxHeight: "1200px" }}>
+                        <Card >
                             <CardMedia
                                 component="img"
                                 alt="date night and chill"
@@ -117,7 +117,7 @@ export default function AboutMe() {
 
                     {/* workspace tracker card */}
                     <Grid item sm={12} md={4}>
-                        <Card sx={{ maxWidth: "100%", maxHeight: "970px" }}>
+                        <Card >
                             <CardMedia
                                 component="img"
                                 alt="workspace tracker"
@@ -146,7 +146,7 @@ export default function AboutMe() {
 
                     {/* maung's shop card */}
                     <Grid item sm={12} md={4}>
-                        <Card sx={{ maxWidth: "100%", maxHeight: "970px" }}>
+                        <Card >
                             <CardMedia
                                 component="img"
                                 alt="workspace tracker"
@@ -174,7 +174,7 @@ export default function AboutMe() {
                     </Grid>
 
                     <Grid item sm={12} md={4}>
-                        <Card sx={{ maxWidth: "100%", maxHeight: "970px" }}>
+                        <Card >
                             <CardMedia
                                 component="img"
                                 alt="workspace tracker"
