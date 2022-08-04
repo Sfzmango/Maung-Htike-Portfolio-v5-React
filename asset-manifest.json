@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.ce2aabe7.css",
-    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.496c84b0.js",
+    "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.c94835c2.css",
+    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.dcdc18bc.js",
     "static/js/787.28cb0dcd.chunk.js": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js",
     "static/media/aboutmebg.webm": "/Maung-Htike-Portfolio-v5-React/static/media/aboutmebg.9d6db15a3368cf35cb54.webm",
     "static/media/homebg.webm": "/Maung-Htike-Portfolio-v5-React/static/media/homebg.a30e5aa12bc96088e797.webm",
@@ -19,12 +19,12 @@
     "static/media/resume.pdf": "/Maung-Htike-Portfolio-v5-React/static/media/resume.b45e128f1c145995a395.pdf",
     "static/media/workspace.png": "/Maung-Htike-Portfolio-v5-React/static/media/workspace.8271a89a1d12a4b10b90.png",
     "index.html": "/Maung-Htike-Portfolio-v5-React/index.html",
-    "main.ce2aabe7.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.ce2aabe7.css.map",
-    "main.496c84b0.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.496c84b0.js.map",
+    "main.c94835c2.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.c94835c2.css.map",
+    "main.dcdc18bc.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.dcdc18bc.js.map",
     "787.28cb0dcd.chunk.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce2aabe7.css",
-    "static/js/main.496c84b0.js"
+    "static/css/main.c94835c2.css",
+    "static/js/main.dcdc18bc.js"
   ]
 }
