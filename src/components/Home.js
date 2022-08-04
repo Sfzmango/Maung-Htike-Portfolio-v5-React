@@ -26,7 +26,7 @@ export default function Home({ setPage }) {
                 <Stack spacing={3} direction={{ xs: 'column', sm: 'row' }}>
                     <Button variant="contained" color="warning" onClick={() => setPage(() => <AboutMe />)}>About Me</Button>
                     <Button variant="contained" color="warning" onClick={() => setPage(() => <Projects />)}>Projects</Button>
-                    <Button variant="contained" color="warning" onClick={() => setPage(() => <Contacts />)}>Contact</Button>
+                    <Button variant="contained" color="warning" href="https://www.linkedin.com/in/maung-htike-482b4b143/">Contact</Button>
                     <Button href={resume} target="_blank" rel="noreferrer" color="warning" variant="contained" >Resume</Button>
                 </Stack>
             </div>

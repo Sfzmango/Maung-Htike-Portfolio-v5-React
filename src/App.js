@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, Box, Typography, IconButton, List, ListItemButton, ListItemIcon, ListItemText, Collapse, } from "@mui/material";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 import MenuIcon from "@mui/icons-material/Menu";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
+// import Contacts from "./components/Contacts";
 import resume from "./assets/resume.pdf";
 
 // const footerStyle = {
@@ -60,7 +63,14 @@ export default function App() {
                 <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href={resume} target="_blank" rel="noreferrer"><ListItemText primary="Resume" /></a>
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="Contact" align="center" onClick={() => setPage(() => <Contacts />)} />
+                <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href="https://www.linkedin.com/in/maung-htike-482b4b143/" target="_blank" rel="noreferrer"><LinkedInIcon /></a>
+              </ListItemButton>
+              <ListItemButton>
+                <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href="https://github.com/Sfzmango" target="_blank" rel="noreferrer"><GitHubIcon /></a>
+
+              </ListItemButton>
+              <ListItemButton>
+                <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href="mailto:maunghtikebusiness@gmail.com" target="_blank" rel="noreferrer"><EmailIcon /></a>
               </ListItemButton>
             </List>
           </Box>
