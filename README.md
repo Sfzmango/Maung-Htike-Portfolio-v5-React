@@ -11,7 +11,6 @@
 - [Installation](#-installation-)
 - [Usage](#-usage-)
 - [Technologies and Programs Used](#-technologies-and-programs-used-)
-<!-- - [Demonstration](#-demonstration-) -->
 - [Links](#-links-)
 - [Credits](#-credits-)
 - [License](#-license-)
@@ -59,14 +58,11 @@ On the app, you can navigate through the different pages using the menu on the t
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 <br>
 
-<!-- ## <ins> Demonstration: </ins>
-        
-![Demonstration](./src/assets/demo.gif)
-<br><br>    -->
-
 ## <ins> Links: </ins>
         
 - [Github Repository](https://github.com/Sfzmango/Maung-Htike-Portfolio-v5-React)
+- [Github Deployed Page](https://sfzmango.github.io/Maung-Htike-Portfolio-v5-React/)
+
 <br>     
 
 ## <ins> Credits: </ins>
