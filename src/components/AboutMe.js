@@ -29,7 +29,7 @@ export default function AboutMe() {
     // if (window.innerWidth > "1000") {
     return (
         <section className="gifbg">
-            <video autoPlay playsinline muted loop width="100%" src={bg} type="video/webm"></video>
+            <video autoPlay playsInline muted loop width="100%" src={bg} type="video/webm"></video>
 
             <div className="overlay2"></div>
             <div>

@@ -9,6 +9,7 @@ import resume from "../assets/resume.pdf";
 
 export default function Home({ setPage }) {
 
+
     return (
         <section className='gifbg'>
 
@@ -16,7 +17,7 @@ export default function Home({ setPage }) {
                 <img src={logo} alt="website logo" width="200px" />
             </Typography>
 
-            <video autoPlay muted loop playsinline width="100%" src={bg} type="video/webm"></video>
+            <video autoPlay muted playsInline loop width="100%" src={bg} type="video/webm"></video>
 
             <div className="overlay"></div>
 
