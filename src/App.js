@@ -9,6 +9,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 // import Contacts from "./components/Contacts";
 import resume from "./assets/resume.pdf";
+import MediumIcon from "./assets/mediumlogo.png"
 
 // const footerStyle = {
 //   color: "black"
@@ -67,10 +68,12 @@ export default function App() {
               </ListItemButton>
               <ListItemButton>
                 <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href="https://github.com/Sfzmango" target="_blank" rel="noreferrer"><GitHubIcon /></a>
-
               </ListItemButton>
               <ListItemButton>
                 <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href="mailto:maunghtikebusiness@gmail.com" target="_blank" rel="noreferrer"><EmailIcon /></a>
+              </ListItemButton>
+              <ListItemButton>
+                <a style={{ textDecoration: "none", width: "100%", color: "white" }} href="https://medium.com/@maunghtike" target="_blank" rel="noreferrer"><img src={MediumIcon} alt="medium blog" style={{ width: "15%", color: "white", marginLeft: "42%" }} /></a>
               </ListItemButton>
             </List>
           </Box>
