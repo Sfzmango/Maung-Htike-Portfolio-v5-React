@@ -10,28 +10,8 @@ import intern from '../assets/digitalmedia.JPG';
 
 export default function AboutMe() {
 
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    // useEffect(() => {
-    //     function handleResize() {
-
-    //         setWindowWidth({
-    //             width: window.innerWidth,
-    //             height: window.innerHeight,
-    //         });
-    //     }
-    // });
-
-    // window.addEventListener("resize", handleResize);
-
-    // handleResize();
-
-    // if (window.innerWidth > "1000") {
     return (
-        <section className="gifbg">
-            <video autoPlay playsInline muted loop width="100%" src={bg} type="video/webm"></video>
-
-            <div className="overlay2"></div>
+        <section >
             <div>
 
                 {/* about me card */}
@@ -199,9 +179,3 @@ export default function AboutMe() {
         </section >
     );
 }
-//     else {
-//         return (<>
-//             SORRY WIP
-//         </>)
-//     }
-// }
