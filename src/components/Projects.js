@@ -11,10 +11,7 @@ import bg from "../assets/projectsbg.webm";
 export default function AboutMe() {
 
     return (
-        <div className="gifbg">
-            <video autoPlay playsInline muted loop width="100%" src={bg} type="video/webm"></video>
-
-            <div className="overlay2"></div>
+        <div>
 
             <div style={{ zIndex: "110", margin: "10px" }}>
 
