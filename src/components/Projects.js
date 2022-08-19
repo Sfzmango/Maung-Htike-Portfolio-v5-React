@@ -56,7 +56,7 @@ export default function Projects() {
                             <div className="shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover mb-6"
                                 style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="light">
                                 <img src={vacationawaits} alt="vacation awaits" className="w-full h-[350px] object-cover" />
-                                <a href="https://sfzmango.github.io/date-night-and-chill/" target="_blank" rel="noreferrer">
+                                <a href="https://vacation-awaits.herokuapp.com/" target="_blank" rel="noreferrer">
                                     <div
                                         className="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
                                         style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
@@ -78,7 +78,7 @@ export default function Projects() {
                                     <br />
                                     <b> Role:  Team Lead</b> - Handled the overall project management of the application and also worked on API implementation, ExpressJS routes, and front-end development.
                                 </p>
-                                <a type="button" className="inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/date-night-and-chill" target="_blank" rel="noreferrer">Repo</a>
+                                <a type="button" className="inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/vacation-awaits" target="_blank" rel="noreferrer">Repo</a>
                             </div>
                         </div>
 
