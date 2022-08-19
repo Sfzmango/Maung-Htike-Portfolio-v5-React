@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.d510611c.css",
-    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.0d87da3f.js",
+    "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.5a20e064.css",
+    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.7ae85236.js",
     "static/js/787.28cb0dcd.chunk.js": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js",
-    "static/media/aboutmebg.webm": "/Maung-Htike-Portfolio-v5-React/static/media/aboutmebg.9d6db15a3368cf35cb54.webm",
-    "static/media/homebg.webm": "/Maung-Htike-Portfolio-v5-React/static/media/homebg.a30e5aa12bc96088e797.webm",
-    "static/media/projectsbg.webm": "/Maung-Htike-Portfolio-v5-React/static/media/projectsbg.bb55d72915070f9dd8c3.webm",
+    "static/media/homebg.gif": "/Maung-Htike-Portfolio-v5-React/static/media/homebg.9eb3f85882c428336f68.gif",
     "static/media/memorylane.gif": "/Maung-Htike-Portfolio-v5-React/static/media/memorylane.a23e622838aa283d967c.gif",
     "static/media/tech.PNG": "/Maung-Htike-Portfolio-v5-React/static/media/tech.cb81cd18bad3eeb9c89f.PNG",
     "static/media/digitalmedia.JPG": "/Maung-Htike-Portfolio-v5-React/static/media/digitalmedia.9d46fae44b33c899fe41.JPG",
     "static/media/dnc-bg.jpg": "/Maung-Htike-Portfolio-v5-React/static/media/dnc-bg.d54e0f3458404a98db11.jpg",
     "static/media/vacationawaits.png": "/Maung-Htike-Portfolio-v5-React/static/media/vacationawaits.264cc8323e47b8179bff.png",
-    "static/media/sep.JPG": "/Maung-Htike-Portfolio-v5-React/static/media/sep.701cb7c545587b3ecdeb.JPG",
+    "static/media/sep.JPG": "/Maung-Htike-Portfolio-v5-React/static/media/sep.4d7b0ced5a74b6eef2f4.JPG",
     "static/media/pass-gen.gif": "/Maung-Htike-Portfolio-v5-React/static/media/pass-gen.0b5e01ce5d5f7a9e63ab.gif",
+    "static/media/char.png": "/Maung-Htike-Portfolio-v5-React/static/media/char.67f7f569b8535fe8dc47.png",
+    "static/media/skylinedegree.png": "/Maung-Htike-Portfolio-v5-React/static/media/skylinedegree.a0c4e1b1007ee2b3face.png",
     "static/media/back-end.png": "/Maung-Htike-Portfolio-v5-React/static/media/back-end.3a4ff2ded76f527ad30d.png",
+    "static/media/aboutmebg.png": "/Maung-Htike-Portfolio-v5-React/static/media/aboutmebg.191bd446579b2d980021.png",
     "static/media/mil.JPG": "/Maung-Htike-Portfolio-v5-React/static/media/mil.21ff62701f60315448a3.JPG",
     "static/media/logo.png": "/Maung-Htike-Portfolio-v5-React/static/media/logo.10e20732033808e97fdd.png",
+    "static/media/milcert.jpg": "/Maung-Htike-Portfolio-v5-React/static/media/milcert.de58745f9b277182e103.jpg",
     "static/media/resume.pdf": "/Maung-Htike-Portfolio-v5-React/static/media/resume.ee8d15c818bc83667e83.pdf",
     "static/media/workspace.png": "/Maung-Htike-Portfolio-v5-React/static/media/workspace.8271a89a1d12a4b10b90.png",
+    "static/media/githublogo.png": "/Maung-Htike-Portfolio-v5-React/static/media/githublogo.a8baa95ce3f27e635a6b.png",
+    "static/media/ucbcert.jpg": "/Maung-Htike-Portfolio-v5-React/static/media/ucbcert.4a68961fc2678c21183a.jpg",
     "index.html": "/Maung-Htike-Portfolio-v5-React/index.html",
-    "main.d510611c.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.d510611c.css.map",
-    "main.0d87da3f.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.0d87da3f.js.map",
+    "main.5a20e064.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.5a20e064.css.map",
+    "main.7ae85236.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.7ae85236.js.map",
     "787.28cb0dcd.chunk.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d510611c.css",
-    "static/js/main.0d87da3f.js"
+    "static/css/main.5a20e064.css",
+    "static/js/main.7ae85236.js"
   ]
 }
