@@ -3,13 +3,13 @@ import { Drawer, Box, Typography, IconButton, List, ListItemButton, ListItemIcon
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import MenuIcon from "@mui/icons-material/Menu";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
-// import Contacts from "./components/Contacts";
+import Contacts from "./components/Contacts";
 import resume from "./assets/resume.pdf";
 import MediumIcon from "./assets/mediumlogo.png"
+import logo from "./assets/logo.png";
 
 // const footerStyle = {
 //   color: "black"
@@ -22,32 +22,74 @@ export default function App() {
 
   const [contactCollapse, setContactCollapse] = useState(true);
 
+  const [homeCheck, setHomeCheck] = useState(true);
+
   const handleClick = () => {
     setContactCollapse(!contactCollapse);
   };
 
   useEffect(() => {
     if (!page) {
-      setPage(() => <Home setPage={setPage} />);
+      setPage(() => <Home setPage={setPage} setMenuDrawer={setMenuDrawer} setHomeCheck={setHomeCheck} />);
     }
   });
 
   return (
     <>
-
       <div>
 
+        {homeCheck ? <></> : <nav className="w-full flex flex-wrap items-center justify-between py-4 bg-neutral-900 text-gray-200 shadow-lg hover:text-gray-700 focus:text-gray-700 navbar navbar-expand-lg navbar-light fixed mb-20 z-50">
+          <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+
+            {/* left navbar */}
+            <div className="flex-grow items-center">
+              <a className="text-white" href="/"><img src={logo} className="w-20" alt="logo" /></a>
+            </div>
+
+            {/* right navbar */}
+            <div className="flex items-center relative">
+              {/* <IconButton color="inherit" aria-label="logo" onClick={() => { setMenuDrawer(true) }}>
+                <MenuIcon sx={{ fontSize: "2rem" }} />
+              </IconButton> */}
+              <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
+                <li>
+                  <button className="text-base text-gray-200 focus:outline-none bg-transparent focus:ring-0 hover:underline" onClick={() => { setPage(() => <Home setPage={setPage} setHomeCheck={setHomeCheck} setMenuDrawer={setMenuDrawer} />); setHomeCheck(true) }}>
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button className="text-base text-gray-200 focus:outline-none  bg-transparent focus:ring-0 hover:underline" onClick={() => { setPage(() => <AboutMe />); setHomeCheck(false) }}>
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button className="text-base text-gray-200 focus:outline-none bg-transparent focus:ring-0 hover:underline" onClick={() => { setPage(() => <Projects />); setHomeCheck(false) }}>
+                    Projects
+                  </button>
+                </li>
+                <li>
+                  <button className="text-base text-gray-200 focus:outline-none  bg-transparent focus:ring-0 hover:underline" onClick={() => { setPage(() => <Contacts />); setHomeCheck(false) }}>
+                    Contact
+                  </button>
+                </li>
+                <li>
+                  <a href={resume} target="_blank" rel="noreferrer" className="text-base text-gray-200 focus:outline-none bg-transparent focus:ring-0 hover:underline">
+                    Resume
+                  </a>
+                </li>
+              </ul>
+              <ul className="w-8/12 md:hidden items-center justify-center space-x-8">
+                <li>
+                  <button className="text-base text-gray-200 focus:outline-none  bg-transparent focus:ring-0 hover:underline" data-mdb-ripple="true" data-mdb-ripple-color="light" onClick={() => { setMenuDrawer(true) }} style={{ textShadow: "0px 0px 3px black" }}>MENU
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>}
 
 
 
-
-        <IconButton
-          sx={{ position: "fixed", top: "0", right: "0", padding: 1.5, marginTop: "3%", marginRight: "3%", zIndex: 200, color: "white" }}
-          color="inherit"
-          aria-label="logo"
-          onClick={() => { setMenuDrawer(true) }}>
-          <MenuIcon sx={{ fontSize: "3rem" }} />
-        </IconButton>
         <Drawer
           anchor='right'
           open={menuDrawer}
@@ -57,13 +99,16 @@ export default function App() {
               sx={{ width: '100%', maxWidth: 360, color: "white" }}
               component="nav">
               <ListItemButton>
-                <ListItemText sx={{ fontSize: "3rem" }} primary="Home" align="center" onClick={() => setPage(() => <Home setPage={setPage} />)} />
+                <ListItemText sx={{ fontSize: "3rem" }} primary="Home" align="center" onClick={() => { setPage(() => <Home setPage={setPage} setHomeCheck={setHomeCheck} setMenuDrawer={setMenuDrawer} />); setHomeCheck(true) }} />
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="About Me" align="center" onClick={() => setPage(() => <AboutMe />)} />
+                <ListItemText primary="About Me" align="center" onClick={() => { setPage(() => <AboutMe />); setHomeCheck(false) }} />
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="Projects" align="center" onClick={() => setPage(() => <Projects />)} />
+                <ListItemText primary="Projects" align="center" onClick={() => { setPage(() => <Projects />); setHomeCheck(false) }} />
+              </ListItemButton>
+              <ListItemButton>
+                <ListItemText primary="Contact" align="center" onClick={() => { setPage(() => <Contacts />); setHomeCheck(false) }} />
               </ListItemButton>
               <ListItemButton>
                 <a style={{ textDecoration: "none", width: "100%", textAlign: "center", color: "white" }} href={resume} target="_blank" rel="noreferrer"><ListItemText primary="Resume" /></a>
@@ -85,29 +130,9 @@ export default function App() {
         </Drawer>
       </div>
 
-      {page}
-
-      {/* <footer className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
-        <div className="contactsContents">
-
-          <a href="https://github.com/Sfzmango" target="_blank" rel="noreferrer" style={footerStyle}>
-            <span
-              uk-icon="icon: github-alt; ratio: 1.5"></span>
-          </a>
-
-          <a href="https://twitter.com/Sfzm_" target="_blank" rel="noreferrer" style={footerStyle} className="uk-margin-large-left uk-margin-large-right">
-            <span
-              uk-icon="icon: twitter; ratio: 1.5"></span>
-          </a>
-
-          <a href="https://www.aedin.com/in/maung-htike-482b4b143/" target="_blank" rel="noreferrer" style={footerStyle}>
-            <span
-              uk-icon="icon: linkedin; ratio: 1.5"></span>
-          </a>
-
-        </div>
-        <p>- © Maung Htike, 2022 MIT. Made using the UIkit CSS framework -</p>
-      </footer> */}
+      <div className="">
+        {page}
+      </div>
     </>
   );
 }
