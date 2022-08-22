@@ -125,6 +125,9 @@ export default function App() {
               <ListItemButton>
                 <a style={{ textDecoration: "none", width: "100%", color: "white" }} href="https://medium.com/@maunghtike" target="_blank" rel="noreferrer"><img src={MediumIcon} alt="medium blog" style={{ width: "15%", color: "white", marginLeft: "42%" }} /></a>
               </ListItemButton>
+              <ListItemButton>
+                <a style={{ textDecoration: "none", width: "100%", color: "white" }} href="https://www.youtube.com/channel/UCiDOm1tx0nbYuCVQyITv5LQ" target="_blank" rel="noreferrer"><img src="https://pnggrid.com/wp-content/uploads/2021/07/White-YouTube-Logo-Transparent.png" alt="medium blog" style={{ width: "15%", color: "white", marginLeft: "42%" }} /></a>
+              </ListItemButton>
             </List>
           </Box>
         </Drawer>
