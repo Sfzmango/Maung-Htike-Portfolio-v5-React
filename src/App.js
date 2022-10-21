@@ -43,7 +43,7 @@ export default function App() {
 
             {/* left navbar */}
             <div className="flex-grow items-center">
-              <a className="text-white" href="/"><img src={logo} className="w-20" alt="logo" /></a>
+              <img src={logo} className="w-20" alt="logo" />
             </div>
 
             {/* right navbar */}
