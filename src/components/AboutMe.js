@@ -7,6 +7,7 @@ import bglg from "../assets/char.png";
 import sep from '../assets/sep.JPG';
 import mil from '../assets/mil.JPG';
 import tech from '../assets/tech.PNG';
+import hcdl from '../assets/hcdl.png';
 import intern from '../assets/digitalmedia.JPG';
 import skylinedegree from '../assets/skylinedegree.png'
 import ucbcert from "../assets/ucbcert.jpg";
@@ -178,15 +179,21 @@ export default function AboutMe() {
                                 <section className='relative lg:inset-1/4'>
                                     <Carousel className='relative py-10 h-fit lg:w-[60%] lg:-ml-16 xl:ml-0 xl:w-[50%] z-10' infiniteLoop="true" emulateTouch="true" style={{ minWidth: "0" }}>
                                         <div>
-                                            <img src={sep} alt="solar consultant pic" />
-                                            <p className="legend"><span className="font-extrabold text-lg">Solar Consultant<br /> </span>                                                     <span><i>Solar Energy Partners ~ North Bay, CA <br /> October 2020 - Present <br /></i></span>
-                                                Currently working as a solar consultant where my job responsibilities are to find possible qualifying households for solar and direct them into going green while also saving them money on their electricity bill. I work with the client to try to fulfill their needs and goals for solar. Not only do I have to generate leads, but I also have to prepare a design proposal with our partners for the customer and negotiate with them to close a deal that they are happy with.</p>
+                                            <img src={hcdl} alt="hcdl pic" />
+                                            <p className="legend"><span className="font-extrabold text-[.9rem]">Dev Team Full Stack Developer Intern<br /> </span><span><i>HCDL Inc. - Remote <br />
+                                                October 2022 - Present <br /></i></span>
+                                                Recently started an internship at a start-up company called Healthcare Download Inc (HCDL Inc). Current responsibilities are to design wireframe for the web application of the company using Figma, use React for the front-end, SQL for the back-end development, Postman to test the implimentation of third party APIs, and to attend company and one-on-one meetings with a senior developer to discuss code.</p>
                                         </div>
                                         <div>
                                             <img src={mil} alt="military pic" />
                                             <p className="legend"><span className="font-extrabold text-[.9rem]">2171-Electro-Optical Ordinance Technician<br /> </span><span><i>United States Marine Corps - San Jose, CA <br />
                                                 June 2018 - Present <br /></i></span>
                                                 Currently a reservist in the Marine Corps as an 2171-Electro-Optical Ordnance Repairer. I work on optic related gear. This range from night vision cameras, thermals, and targeting systems on a LAV, JAVELIN, SABER, Howitzer, as well as many more military equipment. Overall my primary duties was to inspect, take inventory, to maintain,and if needed, repair the specified gear utilizing a technical manual.</p>
+                                        </div>
+                                        <div>
+                                            <img src={sep} alt="solar consultant pic" />
+                                            <p className="legend"><span className="font-extrabold text-lg">Solar Consultant<br /> </span>                                                     <span><i>Solar Energy Partners ~ North Bay, CA <br /> October 2020 - September 2022 <br /></i></span>
+                                                Currently working as a solar consultant where my job responsibilities are to find possible qualifying households for solar and direct them into going green while also saving them money on their electricity bill. I work with the client to try to fulfill their needs and goals for solar. Not only do I have to generate leads, but I also have to prepare a design proposal with our partners for the customer and negotiate with them to close a deal that they are happy with.</p>
                                         </div>
                                         <div>
                                             <img src={tech} alt="solar test tech pic" />
