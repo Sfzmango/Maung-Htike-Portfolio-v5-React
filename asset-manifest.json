@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.5a20e064.css",
-    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.073aa40f.js",
+    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.857a69d0.js",
     "static/js/787.28cb0dcd.chunk.js": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js",
     "static/media/homebg.gif": "/Maung-Htike-Portfolio-v5-React/static/media/homebg.9eb3f85882c428336f68.gif",
     "static/media/memorylane.gif": "/Maung-Htike-Portfolio-v5-React/static/media/memorylane.a23e622838aa283d967c.gif",
@@ -18,17 +18,18 @@
     "static/media/mil.JPG": "/Maung-Htike-Portfolio-v5-React/static/media/mil.21ff62701f60315448a3.JPG",
     "static/media/logo.png": "/Maung-Htike-Portfolio-v5-React/static/media/logo.10e20732033808e97fdd.png",
     "static/media/milcert.jpg": "/Maung-Htike-Portfolio-v5-React/static/media/milcert.de58745f9b277182e103.jpg",
-    "static/media/resume.pdf": "/Maung-Htike-Portfolio-v5-React/static/media/resume.8b90d59e8fcdf82b452a.pdf",
+    "static/media/resume.pdf": "/Maung-Htike-Portfolio-v5-React/static/media/resume.47f581061023b0c382d2.pdf",
     "static/media/workspace.png": "/Maung-Htike-Portfolio-v5-React/static/media/workspace.8271a89a1d12a4b10b90.png",
     "static/media/githublogo.png": "/Maung-Htike-Portfolio-v5-React/static/media/githublogo.a8baa95ce3f27e635a6b.png",
     "static/media/ucbcert.jpg": "/Maung-Htike-Portfolio-v5-React/static/media/ucbcert.4a68961fc2678c21183a.jpg",
+    "static/media/hcdl.png": "/Maung-Htike-Portfolio-v5-React/static/media/hcdl.94163b9537fa6aa4192d.png",
     "index.html": "/Maung-Htike-Portfolio-v5-React/index.html",
     "main.5a20e064.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.5a20e064.css.map",
-    "main.073aa40f.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.073aa40f.js.map",
+    "main.857a69d0.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.857a69d0.js.map",
     "787.28cb0dcd.chunk.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a20e064.css",
-    "static/js/main.073aa40f.js"
+    "static/js/main.857a69d0.js"
   ]
 }
