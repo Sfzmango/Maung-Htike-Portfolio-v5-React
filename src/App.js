@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Drawer, Box, Typography, IconButton, List, ListItemButton, ListItemIcon, ListItemText, Collapse, } from "@mui/material";
+import { Drawer, Box, List, ListItemButton, ListItemText } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
@@ -43,7 +43,7 @@ export default function App() {
 
             {/* left navbar */}
             <div className="flex-grow items-center">
-              <img src={logo} className="w-20" alt="logo" />
+              <img src={logo} className="w-20" alt="logo" onClick={() => { setPage(() => <Home setPage={setPage} setHomeCheck={setHomeCheck} setMenuDrawer={setMenuDrawer} />); setHomeCheck(true) }} />
             </div>
 
             {/* right navbar */}
@@ -80,7 +80,7 @@ export default function App() {
               </ul>
               <ul className="w-8/12 md:hidden items-center justify-center space-x-8">
                 <li>
-                  <button className="text-base text-gray-200 focus:outline-none  bg-transparent focus:ring-0 hover:underline" data-mdb-ripple="true" data-mdb-ripple-color="light" onClick={() => { setMenuDrawer(true) }} style={{ textShadow: "0px 0px 3px black" }}>MENU
+                  <button className="text-base text-gray-200 focus:outline-none  bg-transparent focus:ring-0 hover:underline" data-mdb-ripple="true" data-mdb-ripple-color="light" onClick={() => { setMenuDrawer(true) }} style={{ textShadow: "0px 0px 3px black" }}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="hamburger" className="w-10"></img>
                   </button>
                 </li>
               </ul>
