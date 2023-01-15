@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import bg from "../assets/aboutmebg.png";
+import bg from "../assets/about_bg1_img.png";
 import bglg from "../assets/char.png";
 import sep from '../assets/sep.JPG';
 import mil from '../assets/mil.JPG';
@@ -21,17 +21,16 @@ export default function AboutMe() {
 
                 {/* about me card */}
 
-                <div style={{ height: "100vh", width: "100%", justifyContent: "center", alignItems: "center" }} className="-z-50 bg-cover w-screen min-h-screen items-center bg-[url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)]">
+                <div style={{ height: "100vh", width: "100%", justifyContent: "center", alignItems: "center" }} className="-z-50 bg-cover w-screen min-h-screen items-center bg-[url('./assets/about_bg1.jpeg')]">
 
-                    <img src={bg} alt="character" className='absolute w-full z-10 lg:hidden absolute top-40 opacity-60' />
-                    <img src={bglg} alt="character" className='absolute w-full z-10 hidden lg:block absolute -top-30 xl:-top-24' />
+                    <img src={bg} alt="character" className='absolute w-full z-0 lg:hidden absolute top-40 opacity-60' />
 
                     <section>
                         <h1 className="sm:text-center ml-5 sm:ml-0 text-3xl sm:text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-extrabold tracking-tight text-white uppercase relative mt-1 invisible">. </h1>
                         <h1 className="sm:text-center ml-5 sm:ml-0 text-3xl sm:text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-extrabold tracking-tight text-white uppercase relative mt-14" style={{ textShadow: "0px 0px 5px black, 0px 0px 5px black, 0px 0px 3px black" }}>About Me</h1>
                         <div className="text-center bg-[#000000ad] text-gray-800 p-6 grid relative sm:mt-[25%] md:mx-10 h-fit lg:inset-0 lg:static lg:mt-[10%] lg:ml-10 xl:ml-28 lg:w-[40%] xl:w-[30%]">
-                            <p className='text-xl text-white text-center mx-10 max-w-fit' style={{ textShadow: "0px 0px 1px black" }}>Hi, I’m Maung, and I am a Full Stack Developer (MERN). I am a hard-working individual with a passion for going out of my comfort zone and learning new things. I have recently received a certificate in Full Stack Development and my AS in Business Administration. I am currently open for any opportunites that might be available for someone at my level.</p>
-                            <p className='text-xl mt-10 text-white text-center mx-10 max-w-fit uppercase'>Recent graduate from UC Berkeley's Full Stack Development Course
+                            <p className='text-sm sm:text-lg text-white text-center mx-10 max-w-fit' style={{ textShadow: "0px 0px 1px black" }}>Hi, I’m Maung, and I am a Full Stack Developer (MERN). I am a hard-working individual with a passion for going out of my comfort zone and learning new things. I have recently received a certificate in Full Stack Development and my AS in Business Administration. I am currently open for any opportunites that might be available for someone at my level.</p>
+                            <p className='text-sm sm:text-lg mt-10 text-white text-center mx-10 max-w-fit uppercase'>Recent graduate from UC Berkeley's Full Stack Development Course
                             </p>
                         </div>
                     </section>
@@ -65,6 +64,7 @@ export default function AboutMe() {
                                                         <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
                                                         <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
                                                         <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+                                                        <img src='https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white' alt="tailwindcss" />
                                                         <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" />
                                                         <img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery" />
                                                         <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
@@ -169,7 +169,7 @@ export default function AboutMe() {
                     </section>
                 </div>
 
-                <div style={{ width: "100%", objectFit: "cover", alignItems: "center", display: "flex" }} className="bg-cover bg-[url(https://images.unsplash.com/photo-1579547944963-bb18d21c396a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1239&q=80)]">
+                <div style={{ width: "100%", objectFit: "cover", alignItems: "center", display: "flex" }} className="bg-cover bg-[url(./assets/about_bg3.jpeg)]">
 
                     <div className="py-20 md:pt-0 w-screen items-center color-white mt-0 flex-none min-w-0">
 
@@ -180,24 +180,24 @@ export default function AboutMe() {
                             <Carousel className='relative py-10 h-fit lg:w-[60%] lg:-ml-16 xl:ml-0 xl:w-[50%] z-10' infiniteLoop="true" emulateTouch="true" style={{ minWidth: "0" }}>
                                 <div>
                                     <img src={hcdl} alt="hcdl pic" />
-                                    <p className="legend"><span className="font-extrabold text-[.9rem]">Dev Team Full Stack Developer Intern<br /> </span><span><i>HCDL Inc. - Remote <br />
+                                    <p className="legend text-[.3rem]"><span className="font-extrabold text-[.9rem]">Dev Team Full Stack Developer Intern<br /> </span><span><i>HCDL Inc. - Remote <br />
                                         October 2022 - Present <br /></i></span>
                                         Recently started an internship at a start-up company called Healthcare Download Inc (HCDL Inc). Current responsibilities are to design wireframe for the web application of the company using Figma, use React for the front-end, SQL for the back-end development, Postman to test the implimentation of third party APIs, and to attend company and one-on-one meetings with a senior developer to discuss code.</p>
                                 </div>
                                 <div>
                                     <img src={mil} alt="military pic" />
-                                    <p className="legend"><span className="font-extrabold text-[.9rem]">2171-Electro-Optical Ordinance Technician<br /> </span><span><i>United States Marine Corps - San Jose, CA <br />
+                                    <p className="legend text-[.3rem]"><span className="font-extrabold text-[.9rem]">2171-Electro-Optical Ordinance Technician<br /> </span><span><i>United States Marine Corps - San Jose, CA <br />
                                         June 2018 - Present <br /></i></span>
                                         Currently a reservist in the Marine Corps as an 2171-Electro-Optical Ordnance Repairer. I work on optic related gear. This range from night vision cameras, thermals, and targeting systems on a LAV, JAVELIN, SABER, Howitzer, as well as many more military equipment. Overall my primary duties was to inspect, take inventory, to maintain,and if needed, repair the specified gear utilizing a technical manual.</p>
                                 </div>
                                 <div>
                                     <img src={sep} alt="solar consultant pic" />
-                                    <p className="legend"><span className="font-extrabold text-lg">Solar Consultant<br /> </span>                                                     <span><i>Solar Energy Partners ~ North Bay, CA <br /> October 2020 - September 2022 <br /></i></span>
+                                    <p className="legend text-[.3rem]"><span className="font-extrabold text-lg">Solar Consultant<br /> </span>                                                     <span><i>Solar Energy Partners ~ North Bay, CA <br /> October 2020 - September 2022 <br /></i></span>
                                         Currently working as a solar consultant where my job responsibilities are to find possible qualifying households for solar and direct them into going green while also saving them money on their electricity bill. I work with the client to try to fulfill their needs and goals for solar. Not only do I have to generate leads, but I also have to prepare a design proposal with our partners for the customer and negotiate with them to close a deal that they are happy with.</p>
                                 </div>
                                 <div>
                                     <img src={tech} alt="solar test tech pic" />
-                                    <p className="legend"><span className="font-extrabold text-lg">Solar Test Technician<br /> </span>                                                     Solar <span><i>PVEL - Berkeley, CA
+                                    <p className="legend text-[.3rem]"><span className="font-extrabold text-lg">Solar Test Technician<br /> </span>                                                     Solar <span><i>PVEL - Berkeley, CA
                                         <br />
                                         June 2019 - July 2020<br /></i></span>
                                         Worked as a night shift Solar Lead Test
@@ -207,7 +207,7 @@ export default function AboutMe() {
                                 </div>
                                 <div>
                                     <img src={intern} alt="intern pic" />
-                                    <p className="legend"><span className="font-extrabold text-lg">Digital Media Intern<br /> </span>                                                     Solar <span><i>Board of Directors - Redwood City, CA <br />
+                                    <p className="legend text-[.3rem]"><span className="font-extrabold text-lg">Digital Media Intern<br /> </span>                                                     Solar <span><i>Board of Directors - Redwood City, CA <br />
                                         September 2017 to June 2018 <br /></i></span>
                                         Interned for David J. Canepa, the District 5 Supervisor of San Mateo
                                         County. I handled things in the office occasionally, but I mostly handled media related jobs such as taking pictures or videos of events and also editing them using software such as Adobe Premiere. I have received a letter of recommendation from David J. Canepa for my work.</p>
