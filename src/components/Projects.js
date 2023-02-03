@@ -2,7 +2,7 @@ import React from 'react';
 import vacationawaits from "../assets/vacationawaits.png";
 import dnc from "../assets/dnc-bg.jpg";
 import workspace from "../assets/workspace.png";
-import ecommerce from "../assets/back-end.png";
+import timesheetmanager from "../assets/timesheetmanager.gif";
 import passgen from "../assets/pass-gen.gif";
 import memorylane from "../assets/memorylane.gif";
 import 'tw-elements';
@@ -48,6 +48,7 @@ export default function Projects() {
                                     <b> Role: Front End Developer</b> - Worked on the front end of the webpage and also worked with the back-end developer to have code working between the two ends.
                                 </p>
                                 <a type="button" className="inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/coderbennett/memory-lane" target="_blank" rel="noreferrer">Repo</a>
+                                <a type="button" className=" inline-block px-6 py-2.5 my-5 ml-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://the-memory-lane-app.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Link</a>
                             </div>
                         </div>
 
@@ -79,6 +80,7 @@ export default function Projects() {
                                     <b> Role:  Team Lead</b> - Handled the overall project management of the application and also worked on API implementation, ExpressJS routes, and front-end development.
                                 </p>
                                 <a type="button" className="inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/vacation-awaits" target="_blank" rel="noreferrer">Repo</a>
+                                <a type="button" className=" inline-block px-6 py-2.5 my-5 ml-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://vacation-awaits.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Link</a>
                             </div>
                         </div>
 
@@ -97,7 +99,7 @@ export default function Projects() {
 
                             <div className="bg-[rgba(255,255,255,0.85)] p-5 pb-0 mb-5">
                                 <h5 className="text-lg font-bold mb-3">Date Night & Chill</h5>
-                                <div className="mb-3 text-yellow-500 font-medium text-sm flex items-center justify-center lg:justify-start">
+                                <div className="mb-3 text-yellow-600 font-medium text-sm flex items-center justify-center lg:justify-start">
                                     <img className="w-10 h-10 mx-2" src="https://icon-library.com/images/rest-api-icon/rest-api-icon-3.jpg" alt="api icon" viewBox="0 0 384 512" />
                                     <div>Group Project W/ Samuel Mandel and Mohammad Razvi <br />
                                         <span className="text-gray-400">April 2022</span></div>
@@ -110,6 +112,40 @@ export default function Projects() {
                                     <b> Role: Front End Developer </b> - HTML Development and API implementation.
                                 </p>
                                 <a type="button" className=" inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/date-night-and-chill" target="_blank" rel="noreferrer">Repo</a>
+                                <a type="button" className=" inline-block px-6 py-2.5 my-5 ml-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://sfzmango.github.io/date-night-and-chill/" target="_blank" rel="noreferrer">Deployed Link</a>
+                            </div>
+                        </div>
+
+
+
+                        {/* Timesheet Manager card */}
+                        <div className="mb-0">
+                            <div className="shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover mb-6"
+                                style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                <img alt="api" src={timesheetmanager} className="w-full h-[350px]" />
+                                <a href="https://github.com/Sfzmango/maungs-shop" target="_blank" rel="noreferrer">
+                                    <div
+                                        className="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                                        style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
+                                </a>
+                            </div>
+
+                            <div className="bg-[rgba(255,255,255,0.85)] p-5 pb-0 mb-5">
+                                <h5 className="text-lg font-bold mb-3">Timesheet Manager</h5>
+                                <div className="mb-3 text-yellow-700 font-medium text-sm flex items-center justify-center lg:justify-start">
+                                    <img className="w-9 h-10 mx-2" src="https://icon-library.com/images/react-icon/react-icon-29.jpg" alt="react icon" viewBox="0 0 384 512" />
+                                    <div>Solo Project <br />
+                                        <span className="text-gray-400">November 2022</span>
+                                    </div>
+
+                                </div>
+                                <p className="text-gray-500">
+                                    <b>MERN Stack project</b> - Allows users to create a timesheet and add a list of different times when that person has worked.
+                                    <br />
+                                    <b>Tools</b> - Chrome Developer Tools, Figma, Git, GitHub, VSCode, HTML5, CSS3, JavaScript, MongoDB, Express.JS, React, Node.JS, Bootstrap, React Router, JWT, GraphQL, ApolloClient, Heroku.
+                                </p>
+                                <a type="button" className=" inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/accrualify-assessment-timesheet" target="_blank" rel="noreferrer">Repo</a>
+                                <a type="button" className=" inline-block px-6 py-2.5 my-5 ml-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://timesheet-manager-mh.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Link</a>
                             </div>
                         </div>
 
@@ -127,9 +163,11 @@ export default function Projects() {
 
                             <div className="bg-[rgba(255,255,255,0.85)] p-5 pb-0 mb-5">
                                 <h5 className="text-lg font-bold mb-3">Workspace Tracker</h5>
-                                <div className="mb-3 text-yellow-500 font-medium text-sm flex items-center justify-center lg:justify-start">
+                                <div className="mb-3 text-yellow-700 font-medium text-sm flex items-center justify-center lg:justify-start">
                                     <img className="w-16 h-16 mx-2" src="https://icon-library.com/images/mysql-512.png" alt="MySQL icon" viewBox="0 0 384 512" />
-                                    Solo Project
+                                    <div>Solo Project <br />
+                                        <span className="text-gray-400">May 2022</span>
+                                    </div>
                                 </div>
                                 <p className="text-gray-500">
                                     <b>MySQL orientated project</b> - Allows users to create a nicely formatted workspace tracker.
@@ -138,34 +176,6 @@ export default function Projects() {
 
                                 </p>
                                 <a type="button" className=" inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/workspace-tracker" target="_blank" rel="noreferrer">Repo</a>
-                            </div>
-                        </div>
-
-                        {/* Maung's Shop card */}
-                        <div className="mb-0">
-                            <div className="shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover mb-6"
-                                style={{ backgroundPosition: "50%" }} data-mdb-ripple="true" data-mdb-ripple-color="light">
-                                <img alt="api" src={ecommerce} className="w-full h-[350px]" />
-                                <a href="https://github.com/Sfzmango/maungs-shop" target="_blank" rel="noreferrer">
-                                    <div
-                                        className="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
-                                        style={{ backgroundColor: "rgba(251, 251, 251, 0.2)" }}></div>
-                                </a>
-                            </div>
-
-                            <div className="bg-[rgba(255,255,255,0.85)] p-5 pb-0 mb-5">
-                                <h5 className="text-lg font-bold mb-3">Maung's Shop</h5>
-                                <div className="mb-3 text-yellow-500 font-medium text-sm flex items-center justify-center lg:justify-start">
-                                    <img className="w-10 h-10 mx-2" src="https://icon-library.com/images/rest-api-icon/rest-api-icon-3.jpg" alt="api icon" viewBox="0 0 384 512" />
-                                    Solo Project
-                                </div>
-                                <p className="text-gray-500">
-                                    <b>Back-end API orientated project</b> - A back-end API for an pseudo-e-commerce site.
-                                    <br />
-                                    <b>Tools</b>- Git, GitHub, GitHub Pages, VSCode, JavaScript, Node.JS, MySQL, Express.JS, MySQL2, Sequelize.
-
-                                </p>
-                                <a type="button" className=" inline-block px-6 py-2.5 my-5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" href="https://github.com/Sfzmango/maungs-shop" target="_blank" rel="noreferrer">Repo</a>
                             </div>
                         </div>
 
@@ -183,9 +193,11 @@ export default function Projects() {
 
                             <div className="bg-[rgba(255,255,255,0.85)] p-5 pb-0 mb-5">
                                 <h5 className="text-lg font-bold mb-3">Passgen</h5>
-                                <div className="mb-3 text-yellow-500 font-medium text-sm flex items-center justify-center lg:justify-start">
+                                <div className="mb-3 text-yellow-700 font-medium text-sm flex items-center justify-center lg:justify-start">
                                     <img className="w-10 h-10 mx-2" src="https://icon-library.com/images/js-icon/js-icon-24.jpg" alt="javascript icon" viewBox="0 0 384 512" />
-                                    Solo Project
+                                    <div>Solo Project <br />
+                                        <span className="text-gray-400">April 2022</span>
+                                    </div>
                                 </div>
                                 <p className="text-gray-500">
                                     <b>JavaScript orientated project</b> - Allows users to be able to generate a random password or string of characters. The user is able to add or omit uppercase letters, lowercase letters, numbers, and special characters.
