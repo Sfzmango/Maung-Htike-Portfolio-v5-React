@@ -1,3 +1,32 @@
 @tailwind base;
+
+:root {
+    --primary: black;
+    --secondary: darkgoldenrod;
+}
+
+/* Scrollbar styles */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--secondary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(darkgoldenrod, rgb(202, 168, 116), darkgoldenrod);
+    border-radius: 10px;
+    border: 5px double var(--primary);
+}
+
 @tailwind components;
 @tailwind utilities;
