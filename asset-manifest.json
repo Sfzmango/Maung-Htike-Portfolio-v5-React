@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.9c279878.css",
-    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.43602f2c.js",
+    "main.css": "/Maung-Htike-Portfolio-v5-React/static/css/main.13c8348f.css",
+    "main.js": "/Maung-Htike-Portfolio-v5-React/static/js/main.3a5fb345.js",
     "static/js/787.28cb0dcd.chunk.js": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js",
     "static/media/homebg.gif": "/Maung-Htike-Portfolio-v5-React/static/media/homebg.9eb3f85882c428336f68.gif",
     "static/media/memorylane.gif": "/Maung-Htike-Portfolio-v5-React/static/media/memorylane.a23e622838aa283d967c.gif",
@@ -27,12 +27,12 @@
     "static/media/ucbcert.jpg": "/Maung-Htike-Portfolio-v5-React/static/media/ucbcert.4a68961fc2678c21183a.jpg",
     "static/media/hcdl.png": "/Maung-Htike-Portfolio-v5-React/static/media/hcdl.7f2ce780f553c656e431.png",
     "index.html": "/Maung-Htike-Portfolio-v5-React/index.html",
-    "main.9c279878.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.9c279878.css.map",
-    "main.43602f2c.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.43602f2c.js.map",
+    "main.13c8348f.css.map": "/Maung-Htike-Portfolio-v5-React/static/css/main.13c8348f.css.map",
+    "main.3a5fb345.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/main.3a5fb345.js.map",
     "787.28cb0dcd.chunk.js.map": "/Maung-Htike-Portfolio-v5-React/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c279878.css",
-    "static/js/main.43602f2c.js"
+    "static/css/main.13c8348f.css",
+    "static/js/main.3a5fb345.js"
   ]
 }
