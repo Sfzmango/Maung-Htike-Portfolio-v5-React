@@ -17,11 +17,11 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className="absolute w-screen min-h-screen items-center color-white ">
+            <div className="absolute max-w-full min-h-screen items-center color-white ">
 
                 {/* about me card */}
 
-                <div style={{ height: "100vh", width: "100%", justifyContent: "center", alignItems: "center" }} className="-z-50 bg-cover w-screen min-h-screen items-center bg-[url('./assets/about_bg1.jpeg')]">
+                <div style={{ height: "100vh", width: "100%", justifyContent: "center", alignItems: "center" }} className="-z-50 bg-cover overflow-hidden w-screen min-h-screen items-center bg-[url('./assets/about_bg1.jpeg')]">
 
                     <img src={bg} alt="character" className='absolute w-full z-0 lg:hidden absolute top-40 opacity-60' />
 
@@ -37,7 +37,7 @@ export default function AboutMe() {
                 </div>
 
                 {/* page 2 */}
-                <div style={{ height: "100vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }} className=" bg-cover bg-[url(https://images.unsplash.com/photo-1512551980832-13df02babc9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80)]">
+                <div style={{ height: "100vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }} className=" bg-cover overflow-hidden bg-[url(https://images.unsplash.com/photo-1512551980832-13df02babc9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80)]">
 
                     <section className="py-40 md:pt-0">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-extrabold text-white uppercase text-center mb-10" style={{ textShadow: "0px 0px 5px black" }}>Skills</h1>
@@ -169,11 +169,10 @@ export default function AboutMe() {
                     </section>
                 </div>
 
-                <div style={{ width: "100%", objectFit: "cover", alignItems: "center", display: "flex" }} className="bg-cover bg-[url(./assets/about_bg3.jpeg)]">
+                <div style={{ width: "100%", objectFit: "cover", alignItems: "center", display: "flex" }} className="bg-cover overflow-hidden bg-[url(./assets/about_bg3.jpeg)]">
 
                     <div className="py-20 md:pt-0 w-screen items-center color-white mt-0 flex-none min-w-0">
 
-                        {/* <img src={expbg} alt="hexagon bg" className="hidden sm:block absolute h-[100%] w-screen opacity-30" /> */}
                         <h1 className="text-center ml-5 sm:ml-0 text-3xl sm:text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-extrabold tracking-tight text-white uppercase mt-8 pt-10 relative top-8" style={{ textShadow: "0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black" }}>Experiences</h1>
 
                         <section className='relative lg:inset-1/4'>
@@ -182,35 +181,31 @@ export default function AboutMe() {
                                     <img src={hcdl} alt="hcdl pic" />
                                     <p className="legend text-[.3rem]"><span className="font-extrabold text-[.9rem]">Dev Team Full Stack Developer Intern<br /> </span><span><i>HCDL Inc. - Remote <br />
                                         October 2022 - Present <br /></i></span>
-                                        Recently started an internship at a start-up company called Healthcare Download Inc (HCDL Inc). Current responsibilities are to design wireframe for the web application of the company using Figma, use React for the front-end, SQL for the back-end development, Postman to test the implimentation of third party APIs, and to attend company and one-on-one meetings with a senior developer to discuss code.</p>
+                                        Interned at a start-up company called Healthcare Download Inc (HCDL Inc). Responsibilities were to design wireframe for the web application of the company using Figma, use React for the front-end, set-up the back-end server using SQL and Express.JS, Postman to test the implimentation of third party APIs, create user authentication functionality, and to attend company and one-on-one meetings with a senior developer to discuss code. Received a letter of recommendation from the Founder / Lead Developer Rachael Kelm-Southworth</p>
                                 </div>
                                 <div>
                                     <img src={mil} alt="military pic" />
                                     <p className="legend text-[.3rem]"><span className="font-extrabold text-[.9rem]">2171-Electro-Optical Ordinance Technician<br /> </span><span><i>United States Marine Corps - San Jose, CA <br />
                                         June 2018 - Present <br /></i></span>
-                                        Currently a reservist in the Marine Corps as an 2171-Electro-Optical Ordnance Repairer. I work on optic related gear. This range from night vision cameras, thermals, and targeting systems on a LAV, JAVELIN, SABER, Howitzer, as well as many more military equipment. Overall my primary duties was to inspect, take inventory, to maintain,and if needed, repair the specified gear utilizing a technical manual.</p>
+                                        Currently a reservist in the Marine Corps as an 2171-Electro-Optical Ordnance Repairer. Work on optic related gear. This range from night vision cameras, thermals, and targeting systems on a LAV, JAVELIN, SABER, Howitzer, as well as many more military equipment. Overall, primary duties are to inspect, take inventory, to maintain,and if needed, repair the specified gear utilizing a technical manual.</p>
                                 </div>
                                 <div>
                                     <img src={sep} alt="solar consultant pic" />
                                     <p className="legend text-[.3rem]"><span className="font-extrabold text-lg">Solar Consultant<br /> </span>                                                     <span><i>Solar Energy Partners ~ North Bay, CA <br /> October 2020 - September 2022 <br /></i></span>
-                                        Currently working as a solar consultant where my job responsibilities are to find possible qualifying households for solar and direct them into going green while also saving them money on their electricity bill. I work with the client to try to fulfill their needs and goals for solar. Not only do I have to generate leads, but I also have to prepare a design proposal with our partners for the customer and negotiate with them to close a deal that they are happy with.</p>
+                                        Worked as a solar consultant where my job responsibilities were to find possible qualifying households for solar and direct them into going green while also saving them money on their electricity bill. Discussed with the client to try to fulfill their needs and goals for solar. Generated own leads, also prepared a design proposal with partners for the customer and negotiate with them and close a deal that they are happy with.</p>
                                 </div>
                                 <div>
                                     <img src={tech} alt="solar test tech pic" />
                                     <p className="legend text-[.3rem]"><span className="font-extrabold text-lg">Solar Test Technician<br /> </span>                                                     Solar <span><i>PVEL - Berkeley, CA
                                         <br />
                                         June 2019 - July 2020<br /></i></span>
-                                        Worked as a night shift Solar Lead Test
-                                        Technician at PV Evolution Labs. My duties involved leading a small group of test
-                                        technicians to put solar panels through various different tests which measured
-                                        their efficiency in a varity of aspects. For example, in one of the tests, we isolate a solar cell in order to tech efficiency at different light angles. Occasionally, I worked with upstream and downstream customers to help facilitate the logistics side of the testing process.</p>
+                                        Worked as a night shift Solar Lead Test Technician at PV Evolution Labs. Duties involved leading a small group of test technicians to test solar panels through various different test fixtures which measured their efficiency in a varity of different aspects. For example, one of the tests involved isolating a solar cell from the rest of the panel in order to test the output efficiency at different light angles. Occasionally worked with upstream and downstream customers to help facilitate the logistics side of the testing process.</p>
                                 </div>
                                 <div>
                                     <img src={intern} alt="intern pic" />
                                     <p className="legend text-[.3rem]"><span className="font-extrabold text-lg">Digital Media Intern<br /> </span>                                                     Solar <span><i>Board of Directors - Redwood City, CA <br />
                                         September 2017 to June 2018 <br /></i></span>
-                                        Interned for David J. Canepa, the District 5 Supervisor of San Mateo
-                                        County. I handled things in the office occasionally, but I mostly handled media related jobs such as taking pictures or videos of events and also editing them using software such as Adobe Premiere. I have received a letter of recommendation from David J. Canepa for my work.</p>
+                                        Interned for David J. Canepa, the District 5 Supervisor of San Mateo County. Handled office work occasionally, but mostly handled media related tasks such as taking pictures or videos of events and also editing them using software such as Adobe Premiere. Received a letter of recommendation from David J. Canepa.</p>
                                 </div>
                             </Carousel>
                         </section>
